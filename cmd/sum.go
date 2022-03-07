@@ -24,15 +24,15 @@ import (
 // sumCmd represents the sum command
 var sumCmd = &cobra.Command{
 	Use:   "sum",
-	Short: "A brief description of your command",
-	Long: `A longer description that spans multiple lines and likely contains examples
-and usage of using your command. For example:
+	Short: "A command which outputs the sum total of inputs",
+	Long: `
+	A command that takes in user inputs in integer values and outputs a total sum, 
+	including multiple values which is not pre-determined (adaptive). For example:
 
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+... sum 1 2 3 4 
+output is 10.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("sum called")
+		fmt.Println("kannan cobra-cli calculator v1.0 running")
 	},
 }
 
